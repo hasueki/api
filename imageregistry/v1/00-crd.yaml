@@ -1135,11 +1135,13 @@ spec:
                           as a service credential and must contain HMAC type credentials.
                           Optional, will be computed if not provided.
                         type: string
+                        pattern: ^crn:.+:.+:.+:cloud-object-storage:.+:.+:.+:resource-key:.+$
                       serviceInstanceCrn:
                         description: serviceInstanceCrn is the CRN of the IBM Cloud
                           Object Storage service instance that this bucket is associated
                           with. Optional, will be computed if not provided.
                         type: string
+                        pattern: ^crn:.+:.+:.+:cloud-object-storage:.+:.+:.+::$
                   managementState:
                     description: managementState indicates if the operator manages
                       the underlying storage unit. If Managed the operator will remove
@@ -1465,11 +1467,13 @@ spec:
                           as a service credential and must contain HMAC type credentials.
                           Optional, will be computed if not provided.
                         type: string
+                        pattern: ^crn:.+:.+:.+:cloud-object-storage:.+:.+:.+:resource-key:.+$
                       serviceInstanceCrn:
                         description: serviceInstanceCrn is the CRN of the IBM Cloud
                           Object Storage service instance that this bucket is associated
                           with. Optional, will be computed if not provided.
                         type: string
+                        pattern: ^crn:.+:.+:.+:cloud-object-storage:.+:.+:.+::$
                   managementState:
                     description: managementState indicates if the operator manages
                       the underlying storage unit. If Managed the operator will remove

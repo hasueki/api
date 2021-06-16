@@ -290,11 +290,13 @@ type ImageRegistryConfigStorageIBMCOS struct {
 	// must contain HMAC type credentials.
 	// Optional, will be computed if not provided.
 	// +optional
+	// +kubebuilder:validation:Pattern=`^crn:.+:.+:.+:cloud-object-storage:.+:.+:.+:resource-key:.+$`
 	ResourceKeyCRN string `json:"resourceKeyCrn,omitempty"`
 	// serviceInstanceCrn is the CRN of the IBM Cloud Object Storage service
 	// instance that this bucket is associated with.
 	// Optional, will be computed if not provided.
 	// +optional
+	// +kubebuilder:validation:Pattern=`^crn:.+:.+:.+:cloud-object-storage:.+:.+:.+::$`
 	ServiceInstanceCRN string `json:"serviceInstanceCrn,omitempty"`
 }
 
