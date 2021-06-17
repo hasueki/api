@@ -122,8 +122,8 @@ var map_ImageRegistryConfigStorageIBMCOS = map[string]string{
 	"bucket":             "bucket is the bucket name in which you want to store the registry's data. Optional, will be generated if not provided.",
 	"location":           "location is the IBM Cloud location in which your bucket exists. Optional, will be set based on the installed IBM Cloud location.",
 	"resourceGroupName":  "resourceGroupName is the name of the IBM Cloud resource group that this bucket and its service instance is associated with. Optional, will be set based on the installed IBM Cloud resource group.",
-	"resourceKeyCrn":     "resourceKeyCrn is the CRN of the IBM Cloud resource key that is created for the service instance. Commonly referred as a service credential and must contain HMAC type credentials. Optional, will be computed if not provided.",
-	"serviceInstanceCrn": "serviceInstanceCrn is the CRN of the IBM Cloud Object Storage service instance that this bucket is associated with. Optional, will be computed if not provided.",
+	"resourceKeyCRN":     "resourceKeyCRN is the CRN of the IBM Cloud resource key that is created for the service instance. Commonly referred as a service credential and must contain HMAC type credentials. Optional, will be computed if not provided.",
+	"serviceInstanceCRN": "serviceInstanceCRN is the CRN of the IBM Cloud Object Storage service instance that this bucket is associated with. Optional, will be computed if not provided.",
 }
 
 func (ImageRegistryConfigStorageIBMCOS) SwaggerDoc() map[string]string {
